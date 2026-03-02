@@ -1,0 +1,194 @@
+---
+title: "Forschungsrahmen-Übersicht"
+subtitle: "Integriertes Forschungsprojekt 2026-2027 - „Adaptionspfad Schweizer KMU“"
+author: "Fabian Michel"
+date: "2026-03-01"
+lang: de-CH
+bibliography: research_programme.bib
+# Drucke alle Einträge im Literaturverzeichnis (intern), auch wenn nicht explizit zitiert
+nocite: |
+  @*
+format:
+  pdf:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+# Zweck dieser Übersicht
+
+Dieses Dokument bietet eine integrierte Übersicht über den Forschungsrahmen zum Thema sektorale Diversifikation, technologische Anpassungsfähigkeit und handlungsrelevante Empfehlungen für Schweizer KMU. Im Zentrum steht das integrierte Forschungsprojekt „Adaptionspfad Schweizer KMU“ (2026–2027).
+
+Die Übersicht verbindet die zentralen Arbeitsstränge und Studienleistungen:
+
+- Capstone Project als Daten- und Pipeline-Grundlage (APIs, Harmonisierung, HHI, TAI).
+- Experimental Methods als Forschungsdesign für ein Survey-Experiment mit Schweizer KMU-Führungspersonen (Design, Qualtrics, Analyseplan).
+- Methodenseminararbeit als theorieprüfende Makroanalyse (Panelmodelle, DML).
+- Masterseminararbeit Social Science als konzeptionelle und kontextuelle Klammer (Mechanismen, Kontext Schweiz, Übersetzung in einen Adaptionspfad).
+- Masterarbeit als integriertes Zwei-Studien-Design (Study 1: Makroebene; Study 2: Survey-Experiment; Synthese in Empfehlungen).
+
+Die Übersicht zeigt, wann welche Arbeitsschritte stattfinden, welche Methoden in welcher Phase dominieren und wann welche Ergebnisse abgeschlossen sein sollen.
+
+# Übergeordnete Leitlogik
+
+Die übergeordnete Leitfrage der Masterarbeit lautet:
+
+> Wie lassen sich makrostrukturelle Erkenntnisse zum Zusammenhang zwischen sektoraler Diversifikation und technologischer Anpassungsfähigkeit mit mikroexperimenteller Evidenz zu handlungsrelevanten Empfehlungen zu einem evidenzbasierten „Adaptionspfad“ für Schweizer KMU integrieren?
+
+Der Forschungsrahmen ist gestuft, aber nicht rein sequenziell: Die einzelnen Arbeitspakete liefern Inputs, die im Abschlusskolloquium konsolidiert und in der Masterarbeit integriert werden.
+
+- WP1 Capstone Project: Messung und Dateninfrastruktur aufbauen (reproduzierbare Pipeline).
+- WP2 Experimental Methods: Survey-Experiment konzipieren (Treatment-Logik, Outcomes, Analyseplan).
+- WP3 Methodenseminararbeit: Makrohypothese quantitativ testen (Panelmodelle und DML).
+- WP4 Masterseminararbeit Social Science: Kontext, Mechanismen und Übersetzungslogik für den Adaptionspfad ausarbeiten.
+- HS26 Abschlusskolloquium: Inputs bündeln, Masterarbeits-Design finalisieren (Sampling, Feldplan, Pretest, Integration).
+- FS27/HS27 Masterarbeit: Study 1 (Makro) und Study 2 (Experiment) umsetzen, integrieren und abgeben.
+
+# Grafische Gesamtlogik
+
+Abbildung @fig-gesamtlogik visualisiert die Arbeitsstränge und ihre Integration im Abschlusskolloquium sowie in der Masterarbeit.
+
+```{mermaid}
+%%| label: fig-gesamtlogik
+%%| fig-cap: "Arbeitsstränge und Integration im Forschungsrahmen (inkl. optionalem Input aus MSA Social Science)"
+flowchart LR
+  %% Work Packages
+  subgraph WP["Work Packages (2026)"]
+    A["WP1 Capstone Project\nPipeline, APIs, HHI, TAI"]
+    B["WP2 Experimental Methods\nSurvey-Experiment Design\n(Qualtrics, Analyseplan)"]
+    C["WP3 Methodenseminararbeit\nMakroanalyse (Panel, DML)"]
+    D["WP4 Masterseminararbeit Social Science\nMechanismen & Kontext\n(OPTIONAL)"]
+  end
+
+  E["HS26 Abschlusskolloquium\nMasterarbeits-Design konsolidieren\n(Sampling, Feldplan, Pretest, Integration)"]
+
+  subgraph MA["Masterarbeit (2027)"]
+    F1["Study 1: Makroebene\nfinalisieren"]
+    F2["Study 2: Survey-Experiment\numsetzen"]
+    G["Synthese: evidenzbasierter\n„Adaptionspfad“ & Empfehlungen"]
+  end
+
+  %% Abhängigkeiten (korrigiert)
+  A -->|"Grundlage"| C
+  B -->|"Designgrundlage"| E
+  C --> E
+  D -. "optional" .-> E
+
+  E --> F1
+  E --> F2
+  F1 --> G
+  F2 --> G
+```
+
+# Zeitplan des Forschungsprojekts
+
+Der Zeitplan in Abbildung @fig-zeitplan zeigt die zeitliche Taktung der Arbeitspakete von März 2026 bis Dezember 2027.
+
+```{mermaid}
+%%| label: fig-zeitplan
+%%| fig-cap: "Zeitplan 2026–2027 (Work Packages und Meilensteine)"
+gantt
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b %Y
+
+  section 2026
+  Capstone Project (WP1)                     :a1, 2026-03-01, 2026-03-31
+  Experimental Methods (WP2)                 :a2, 2026-04-01, 2026-05-31
+  Methodenseminararbeit (WP3)                :a3, 2026-06-01, 2026-08-31
+  Masterseminararbeit Social Science (WP4)   :a4, 2026-09-01, 2026-12-15
+  HS26 Abschlusskolloquium                   :a5, 2026-09-01, 2026-12-15
+  Capstone abgeschlossen                      :milestone, m1, 2026-03-31, 0d
+  Experimental FD abgeschlossen               :milestone, m2, 2026-05-31, 0d
+  Methodenseminararbeit abgeschlossen         :milestone, m3, 2026-08-31, 0d
+  Masterarbeits-FD verfeinert (Kolloquium)    :milestone, m4, 2026-12-15, 0d
+
+  section 2027
+  Masterarbeit FS27 (Study 1 finalisieren; Study 2 vorbereiten) :b1, 2027-02-01, 2027-06-30
+  Study 1 final / Study 2 freigegeben                             :milestone, m5, 2027-06-30, 0d
+  Masterarbeit HS27 (Study 2 umsetzen; Integration & Abgabe)    :b2, 2027-09-01, 2027-12-15
+  Masterarbeit abgeschlossen                                      :milestone, m6, 2027-12-15, 0d
+```
+
+# Methoden nach Phase
+
+Statt einer breiten Methodenliste ordnet Abbildung @fig-methodenlandkarte die zentralen Methoden nach ihrem Zweck im Forschungsrahmen. Dadurch wird sichtbar, welche Bausteine welche Evidenz liefern und wie sie in der Synthese zusammengeführt werden.
+
+```{mermaid}
+%%| label: fig-methodenlandkarte
+%%| fig-cap: "Methodenlandkarte – zentrale Bausteine und Querschnittsprinzipien"
+flowchart TB
+  subgraph Grundlagen["Grundlagen (Daten & Design)"]
+    P["Capstone (WP1)\nAPI Data Engineering\nHarmonisierung\nIndikatoren: HHI, TAI"]
+    X["Experimental Methods (WP2)\nSurvey-Experiment Design\nQualtrics-Konzeption\nAnalyseplan"]
+  end
+
+  subgraph Evidenz["Evidenzbausteine"]
+    M["Makroanalyse (WP3 / Study 1)\nPanelmodelle\nDML-Robustheit"]
+    S["Social Science (WP4)\nMechanismen & Kontext (CH/KMU)\nÜbersetzungslogik (optional)"]
+  end
+
+  subgraph Synthese["Synthese (Masterarbeit)"]
+    Y["Integration\nMakro- & Mikro-Evidenz"]
+    Z["Evidenzbasierter\n„Adaptionspfad“ & Empfehlungen"]
+  end
+
+  P --> M
+  X --> Y
+  M --> Y
+  S -. optional .-> Y
+  Y --> Z
+
+  subgraph Quer["Querschnittsprinzipien"]
+    Q1["Reproduzierbarkeit & Dokumentation"]
+    Q2["Validität, Robustheit & Sensitivität"]
+    Q3["Ethik & Transparenz"]
+  end
+
+  Q1 --- P
+  Q1 --- X
+  Q1 --- M
+  Q2 --- M
+  Q2 --- X
+  Q3 --- X
+```
+
+## Kurzinterpretation: Welche Evidenz liefert welcher Baustein?
+
+- Makroanalyse (Panel/DML): Schätzt den Zusammenhang Diversifikation → technologische Anpassungsfähigkeit und identifiziert robuste Muster auf Sektorebene.
+- Mikroexperiment (Survey-Experiment): Testet, welche Empfehlungstypen und Framings die Akzeptanz bzw. Umsetzungsabsicht bei KMU-Führungspersonen erhöhen.
+- Social Science (Seminararbeit): Präzisiert Mechanismen und Kontextbedingungen (Schweiz/KMU) und übersetzt Befunde in einen plausiblen Adaptionspfad.
+- Synthese (Masterarbeit): Kombiniert Makro- und Mikro-Evidenz zu einer konsistenten Empfehlungskaskade (Adaptionspfad) inkl. Grenzen/Trade-offs.
+
+Abkürzungen: HHI = Herfindahl–Hirschman-Index; TAI = Technological Adaptation Index; DML = Double Machine Learning; JDM = Judgment and Decision Making.
+
+# Ergebnisse und Deliverables nach Phase
+
+Die folgende Tabelle fasst pro Phase den inhaltlichen Schwerpunkt und das erwartete abgeschlossene Ergebnis zusammen.
+
+| Phase | Inhaltlicher Schwerpunkt | Abgeschlossenes Ergebnis |
+|---|---|---|
+| Capstone Project (Mär 2026) | Datenzugang, Harmonisierung, HHI, TAI | Analysebereiter Datensatz, Pipeline-Logik, Replikationsgrundlage (z.B. CH/Taiwan) |
+| Experimental Methods (bis Ende Mai 2026) | Survey-Experiment entwerfen | Forschungsdesign mit Treatments, Outcomes, JDM-Mikrofundierung und Analyseplan; Qualtrics-Draft |
+| Methodenseminararbeit (bis Ende Aug 2026) | Makroanalyse | Theorieprüfende Panelanalyse (multivariat) mit DML-Robustheit; Ergebnis- und Sensitivitätsbericht |
+| Masterseminararbeit Social Science (HS26) | Kontext & Mechanismen; Übersetzungslogik | Konzeptioneller Rahmen für den „Adaptionspfad“ (Mechanismen, Kontext Schweiz); Brücke von Evidenz zu Empfehlungen |
+| Abschlusskolloquium HS26 | Masterarbeits-Design verfeinern | Konsolidiertes Masterarbeits-Forschungsdesign, Sampling- und Feldplan, Pretest-Logik, Integrationsplan |
+| Masterarbeit FS27 | Study 1 finalisieren, Study 2 vorbereiten | Endgültige Makrostudie; Programmierung/Pretest des Experiments; Feldfreigabe |
+| Masterarbeit HS27 | Study 2 umsetzen und integrieren | Feldphase, Auswertung, integrierter Adaptionspfad und Empfehlungen; Abgabe |
+
+# Navigation innerhalb der Website
+
+Über die Website-Navigation gelangst Du direkt zu allen Berichten:
+
+- Capstone Project
+- Experimental Methods Research Design
+- Methodenseminararbeit
+- Masterseminararbeit Social Science
+- Masterarbeit
+
+# Referenzen (intern)
+
+::: {#refs}
+:::
