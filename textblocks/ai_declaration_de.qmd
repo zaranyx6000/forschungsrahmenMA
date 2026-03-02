@@ -1,0 +1,7 @@
+## Verwendung von KI-basierten Tools
+
+Im Einklang mit den Kursrichtlinien habe ich KI-basierte Tools transparent und in begrenztem Umfang eingesetzt:
+
+-   GitHub Copilot (RStudio-Integration) wurde als unterstützendes Tool beim Programmieren verwendet. Es schlug Ausschnitte von R-Code vor. Ich habe jeden Vorschlag kritisch geprüft, bei Bedarf angepasst und nur Code beibehalten, den ich vollständig verstanden habe und den ich für die Aufgabe als angemessen erachtete.
+-   DeepL wurde als Tool zur sprachlichen Überarbeitung (Schreibunterstützung) verwendet, um Klarheit, Kohärenz und sprachliche Flüssigkeit zu verbessern. DeepL hat keine inhaltlichen Inhalte generiert.
+-   ChatGPT wurde verwendet, um Teile meiner Arbeit zu überprüfen und zu validieren, zum Beispiel durch das Prüfen der Kohärenz der Argumentation, der Plausibilität von Modellspezifikationen und der Klarheit von Erklärungen. Ich habe das Feedback als Vorschläge behandelt, nicht als autoritative Antworten, und ich habe nur Elemente übernommen, die ich kritisch beurteilt und vollständig verstanden habe.
