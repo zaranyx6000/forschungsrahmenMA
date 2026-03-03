@@ -1,6 +1,6 @@
 # --- Duplikate entfernen (Rohtext-basiert), erste Version behalten ---
-bib_path <- "reference.bib"
-out_path <- "reference.bib"
+bib_path <- "bib/reference.bib"
+out_path <- "bib/reference.bib"
 stopifnot(file.exists(bib_path))
 
 lines <- readLines(bib_path, warn = FALSE)
