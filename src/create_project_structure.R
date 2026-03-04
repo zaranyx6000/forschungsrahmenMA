@@ -40,3 +40,14 @@ dirs <- c(
   # technical documentation (keep separate from website)
   "documentation"
 )
+
+for (d in dirs) {
+  if (!dir.exists(d)) {
+    dir.create(d, recursive = TRUE, showWarnings = FALSE)
+    cat("Created:      ", d, "\n")
+  } else {
+    cat("Already exists:", d, "\n")
+  }
+}
+
+cat("\nProject structure successfully created.\n")
